@@ -43,7 +43,7 @@ const char* vertexShaderTex=R"(
 		frag_UV=UV;
 		frag_Color=Color;
         gl_Position=ProjMtx*vec4(in_position.xy,0,1);
-	};
+	}
 )";
 const char* fragmentShaderTex=R"(
 	uniform sampler2D Texture;
@@ -52,7 +52,7 @@ const char* fragmentShaderTex=R"(
 	out vec4 FragColor;
 	void main() {
 		FragColor=frag_Color*texture(Texture,frag_UV);
-	};
+	}
 )";
 
 const GLchar* vertexShaderAccu=R"(
@@ -73,7 +73,7 @@ const GLchar* vertexShaderAccu=R"(
 		vec4 region=in_region;
 		frag_region=ivec4(region);
 		gl_Position=ProjMtx*vec4(in_position.xy,0,1);
-	};
+	}
 )";
 
 const GLchar* fragmentShaderAccu=R"(
@@ -212,7 +212,7 @@ const GLchar* fragmentShaderAccu=R"(
 		aveColor=pow(aveColor,vec4(1.0/1.2));		//Gamma
 		vFragColor=textColor;
 		vFragBlend=textColor.a*aveColor;
-	};
+	}
 )";
 
 struct Vertex {
