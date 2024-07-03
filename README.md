@@ -27,8 +27,11 @@ $ make
 $ mkdir build
 $ cd build
 $ cmake -DCMAKE_GENERATOR_PLATFORM=x64 ..
-$ Open accufont.sln project in Visual Studio 17 2022 and build
+$ Open summedareafont.sln project in Visual Studio and build
 ```
+# Screenshot
+
+<img width="643" alt="Screenshot-SAF" src="https://github.com/DavidGuldbrandsen/SummedAreaFont/assets/98739117/cb84770a-ca36-4643-bfe2-567b4762eaa5">
 
 # Acknowledgements
 
